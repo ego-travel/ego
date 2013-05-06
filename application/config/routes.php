@@ -48,19 +48,18 @@ $route['404_override'] = '';
 // default backend controller
 $route[ADMINPATH] = 'backend/dashboard';
 
-// language routing
+// language and phrase routing
 $route[ADMINPATH . '/language'] = 'backend/language/language';
 $route[ADMINPATH . '/language/(.*?)'] = 'backend/language/language/$1';
 
-// category routing
-$route[ADMINPATH . '/categories'] = 'backend/category/category';
-$route[ADMINPATH . '/category'] = 'backend/category/category';
+// category and category_type routing
+$route[ADMINPATH . '/(categories|category)'] = 'backend/category/category';
+$route[ADMINPATH . '/category/category_type'] = 'backend/category/category_type';
+$route[ADMINPATH . '/category/category_type/(.*?)'] = 'backend/category/category_type/$1';
 $route[ADMINPATH . '/category/(.*?)'] = 'backend/category/category/$1';
 
 // general backend rounting
 $route[ADMINPATH . '/(.*?)'] = 'backend/$1';
-
-
 
 /**
  * redirect any uri to frontend directory
