@@ -45,7 +45,7 @@ if ( ! function_exists('form_detect_error')) {
 		} else {
 			$error = false;
 			$CI =& get_instance();
-			foreach ($CI->lang->get() as $language) {
+			foreach ($CI->lang->get('translable') as $language) {
 				if (form_error($field . '[' . $language->code . ']')) {
 					$error = true;
 					break;

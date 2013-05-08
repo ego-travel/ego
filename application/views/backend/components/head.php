@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="<?php echo res_url('plugins/bootstrap/css/bootstrap.min.css'); ?>" />
     <link rel="stylesheet" href="<?php echo res_url('plugins/bootstrap/css/bootstrap-responsive.min.css'); ?>" />
     <link rel="stylesheet" href="<?php echo res_url('plugins/font-awesome/css/font-awesome.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo res_url('plugins/uniform/css/uniform.default.css'); ?>" />
     <link rel="stylesheet" href="<?php echo res_url('css/style-metro.css'); ?>" />
     <link rel="stylesheet" href="<?php echo res_url('css/style.css'); ?>" />
     <link rel="stylesheet" href="<?php echo res_url('css/style-responsive.css'); ?>" />
     <link rel="stylesheet" href="<?php echo res_url('css/themes/default.css'); ?>" />
-    <link rel="stylesheet" href="<?php echo res_url('plugins/uniform/css/uniform.default.css'); ?>" />
+    <link rel="stylesheet" href="<?php echo res_url('css/flags.css'); ?>" />
     <!-- eof: global mandatory styles -->
 
     <!-- bof: page level styles -->

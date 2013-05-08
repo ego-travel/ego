@@ -40,13 +40,13 @@
                             <div class="controls">
                                 <div class="tabbable tabbable-custom">
                                     <ul class="nav nav-tabs">
-                                        <?php foreach ($this->lang->get() as $language): ?>
-                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_name_<?php echo $language->code; ?>" data-toggle="tab"><i class="icon-picture"></i> <?php echo $language->name; ?></a></li>
+                                        <?php foreach ($this->lang->get('translable') as $language): ?>
+                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_name_<?php echo $language->code; ?>" data-toggle="tab"><i class="flag lang <?php echo $language->code; ?>"></i> <?php echo $language->name; ?></a></li>
                                         <?php endforeach; ?>
                                     </ul>
 
                                     <div class="tab-content">
-                                        <?php foreach ($this->lang->get() as $language): ?>
+                                        <?php foreach ($this->lang->get('translable') as $language): ?>
                                         <div class="tab-pane<?php echo ($this->session->get('language')->id == $language->id ? ' active' : null); ?>" id="tab_category_type_name_<?php echo $language->code; ?>">
                                             <input type="text" name="name[<?php echo $language->code; ?>]" class="span6 m-wrap" value="<?php echo set_value('name[' . $language->code . ']'); ?>" />
                                             <span class="help-block"><?php echo $this->lang->line('name_desc'); ?></span>
@@ -70,13 +70,13 @@
                             <div class="controls">
                                 <div class="tabbable tabbable-custom">
                                     <ul class="nav nav-tabs">
-                                        <?php foreach ($this->lang->get() as $language): ?>
-                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_description_<?php echo $language->code; ?>" data-toggle="tab"><i class="icon-picture"></i> <?php echo $language->name; ?></a></li>
+                                        <?php foreach ($this->lang->get('translable') as $language): ?>
+                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_description_<?php echo $language->code; ?>" data-toggle="tab"><i class="flag lang <?php echo $language->code; ?>"></i> <?php echo $language->name; ?></a></li>
                                         <?php endforeach; ?>
                                     </ul>
 
                                     <div class="tab-content">
-                                        <?php foreach ($this->lang->get() as $language): ?>
+                                        <?php foreach ($this->lang->get('translable') as $language): ?>
                                         <div class="tab-pane<?php echo ($this->session->get('language')->id == $language->id ? ' active' : null); ?>" id="tab_category_type_description_<?php echo $language->code; ?>">
                                             <textarea name="description[<?php echo $language->code; ?>]" class="span12 m-wrap" rows="5"><?php echo set_value('description[' . $language->code . ']'); ?></textarea>
                                             <span class="help-block"><?php echo $this->lang->line('description_desc'); ?></span>

@@ -467,7 +467,7 @@ class MY_Model extends CI_Model
         // if current table is translable
         // insert into translation table
         if (true === $this->translable) {
-            foreach ($this->lang->get() as $index => $language) {
+            foreach ($this->lang->get('translable') as $index => $language) {
                 $data = array();
                 foreach ($this->translate_fields as $field) {
                     if (isset($data_translation[$field][$language->code])) {

@@ -57,7 +57,7 @@
                                 <div class="tabbable tabbable-custom">
                                     <ul class="nav nav-tabs">
                                         <?php foreach ($this->lang->get('translable') as $language): ?>
-                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_name_<?php echo $language->code; ?>" data-toggle="tab"><i class="icon-picture"></i> <?php echo $language->name; ?></a></li>
+                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_name_<?php echo $language->code; ?>" data-toggle="tab"><i class="flag lang <?php echo $language->code; ?>"></i> <?php echo $language->name; ?></a></li>
                                         <?php endforeach; ?>
                                     </ul>
 
@@ -87,7 +87,7 @@
                                 <div class="tabbable tabbable-custom">
                                     <ul class="nav nav-tabs">
                                         <?php foreach ($this->lang->get('translable') as $language): ?>
-                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_description_<?php echo $language->code; ?>" data-toggle="tab"><i class="icon-picture"></i> <?php echo $language->name; ?></a></li>
+                                        <li<?php echo ($this->session->get('language')->id == $language->id ? ' class="active"' : null); ?>><a href="#tab_category_type_description_<?php echo $language->code; ?>" data-toggle="tab"><i class="flag lang <?php echo $language->code; ?>"></i> <?php echo $language->name; ?></a></li>
                                         <?php endforeach; ?>
                                     </ul>
 

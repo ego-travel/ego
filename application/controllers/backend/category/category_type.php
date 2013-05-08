@@ -32,6 +32,8 @@ class Category_type extends BE_Controller
         $this->config->load('common/status');
         $this->lang->load('category/category_type');
         $this->load->model('backend/category/category_type_m');
+
+        $this->load->library('status');
     }
 
     /**
